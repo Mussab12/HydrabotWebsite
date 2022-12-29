@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/register.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/reset.css' %}" />
+    <!---->
+    <title>Registeration</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="register-logo">
+        <figure class="item-banner">
+            <a href="{% url 'index' %}">
+          <img
+            src="{% static 'assets/images/Hydra-Bot-Logo-removebg.png' %}"
+            class="main-logo"
+            loading="lazy"
+          />
+        </figure>
+        <!-- {% for message4 in messages %}
+        <p style="color:red;"> {{message4}} </p>
+
+        {% endfor %} -->
+    </a>
+      </div>
+    
+      <div class="form-container">
+        <h1>Create Account</h1>
+        
+        <form action="register" method="post">
+          {% csrf_token %}
+          <div class="register-box-container"> <label for="user_name" class="register-label">Username</label>
+            <input type="text" name="username" class="register-boxes"class="register-label"placeholder="Username"></div>
+            <div class="register-box-container"> <label for="First_name" class="register-label">Your name</label>
+                <input type="text" name="first_name" class="register-boxes"class="register-label"placeholder="first and lastname"></div>
+            <div class="register-box-container"><label for="mail"class="register-label">Email</label>
+                <input type="email" name="email" class="register-boxes"></div>
+            <div class="register-box-container"><label for="password"class="register-label">Password</label>
+                <input type="password" name="password1" class="register-boxes">
+                <div>
+                  {% for message in messages %}
+                  <p style="color:red;"> {{message}} </p>
+        
+                  {% endfor %}
+                </div>
+              
+              </div>
+                <div class="register-box-container"><label for="repass"class="register-label">Re-enter password</label>
+                    <input type="password" name="password2" class="register-boxes"></div>
+                    <div class="register-box-container">
+                        <input type="Submit" value="Continue" class="register_button">
+
+                    </div>
+             <div class="signin-option">
+                <a href="{% url 'login' %}" class="signin-txt"
+                >Already have an account?<span class="signin-span">Signin</span></a
+              >
+                
+             </div>
+        
+         
+       
+         
+
+
+
+
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

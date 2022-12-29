@@ -1,0 +1,1 @@
+web: gunicorn mussab.wsgi --log-file -

@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/register.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/shop.css' %}" />
+    <!---->
+    <title>Registeration</title>
+  </head>
+  <body>
+    <div class="container-css">
+      <div class="register-logo">
+        <figure class="item-banner">
+            <a href="{% url 'index' %}">
+          <img
+            src="{% static 'assets/images/Hydra-Bot-Logo-removebg.png' %}"
+            class="main-logo"
+            loading="lazy"
+          />
+        </figure>
+    </a>
+      </div>
+    
+      <div class="siginform-container">
+        <h1>Sign-In</h1>
+        <form action="login" method="post">
+          {% csrf_token %}
+            <div class="register-box-container"> <label for="First_name" class="register-label">Username</label>
+                <input type="text" name="username" class="register-boxes"class="register-label"></div>
+            <div class="register-box-container"><label for="mail"class="register-label">Password</label>
+                <input type="password" name="password" class="register-boxes"></div>
+                <div class="register-box-container">
+                  <input type="Submit" value="Continue" class="register_button">
+                  <div>
+                  {% for message in messages %}
+                  <p style="color:red;"> {{message}} </p>
+        
+                  {% endfor %}
+                </div>
+                
+              
+              </div>
+              
+
+                    </div>
+                    
+                   
+            
+                
+             </div>
+        
+         <div class="createaccount-menu">
+       <p class="decoration"></p>
+       <p class="txt-size">New to Hydrabot</p>
+       <p class="decoration"></p>
+       </div>
+       <div class="createaccount-btn">
+        <a href="{% url 'register' %}">
+        <input type="button" value="Create your Hydrabot account" class="createaccount_button">
+        </a>
+       </div>
+      
+         
+
+
+
+
+
+        </form>
+        
+        
+
+        
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{% extends 'basic.html' %} {% block title%} Single Product {% endblock %} 
+{% block body %}
+<div class="container my-4">
+  <div class="row">
+  <div class="col-md-4">
+  <div class="row img-prodmargin">
+   <img src="/media/{{product.Prod_img}}"width="233px" height="385px" alt="">
+  </div>
+  <div class="row product-viewbtn ">
+    
+    
+
+    
+  </div>
+</div>
+<div class="col-md-8">
+  <h5>{{product.Prod_title}}</h5>
+  <p><b>Rs.{{product.Prod_price}}</b></p>
+  <p>{{product.Prod_desc}}</p>
+</div>
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script>
+document.getElementById("cart").innerHTML = sum;
+  document.getElementById("totalPrice").innerHTML =totalPrice;
+  $('#itemsJson').val(JSON.stringify(cart));
+</script>
+{% endblock %}
