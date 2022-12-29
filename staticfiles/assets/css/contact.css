@@ -1,0 +1,42 @@
+/* Designing Contact Form */
+
+/* Form Container */
+.contact-container-css {
+  /* border: 1px solid red; */
+  padding: 21px 93px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Labels */
+label {
+  color: white;
+  padding: 10px;
+}
+/* Input boxes */
+.design-input-box {
+  width: 24vw;
+  outline: none;
+  padding: 5px;
+  border-radius: 29px;
+  height: 32px;
+  background-color: white;
+}
+textarea {
+  margin-bottom: 17px;
+  height: 115px;
+  width: 31vw;
+  border-radius: 15px;
+  outline: none;
+}
+/* Submit button */
+.submit-btn {
+  color: #e7e7e7;
+  background: orange;
+  margin-left: auto;
+  border: 1px solid blue;
+  padding: 9px 35px;
+  border-radius: 19px;
+  margin-right: auto;
+}

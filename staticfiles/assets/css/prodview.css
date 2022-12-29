@@ -1,0 +1,19 @@
+.product-viewbtn {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.buy-now-btn {
+  padding: 12px;
+  width: 102px;
+  border-radius: 10px;
+}
+.addcart-btn {
+  padding: 12px;
+  width: 102px;
+  border-radius: 10px;
+  margin-left: 12px;
+}
+.img-prodmargin img {
+  margin-top: 20px;
+}

@@ -1,0 +1,129 @@
+/* Registeration Logo */
+.register-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Centering Heading */
+h1 {
+  text-align: left;
+  /* padding: 19px; */
+  font-size: 27px;
+  font-weight: 50;
+  outline: 0;
+}
+
+/* body {
+  background-color: #846a29;
+} */
+/* Form Designing */
+
+.form-container {
+  width: 350px;
+  height: 456px;
+
+  border: 1px solid #ddd;
+  padding: 14px 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Register box Form container */
+.register-box-container {
+  padding: 10px 0px;
+}
+/* Labels for input boxes */
+label.register-label {
+  padding: 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+/* Input boxes */
+.register-boxes {
+  border: 1px solid;
+  border: 1px solid #a6a6a6;
+  border-top-color: #949494;
+  border-radius: 3px;
+  width: 306px;
+  height: 28px;
+  outline: 0;
+  padding: 12px;
+  font-size: 14px;
+}
+/* Register Button */
+.register_button {
+  font-size: 13px;
+  /* background: white; */
+  background: #f0c14b;
+  cursor: pointer;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 0px;
+  padding: 6px;
+  border-radius: 3px;
+  /* border-color: #adb1b8 #a2a6ac #8d9096; */
+  border-style: solid;
+  border-width: 1px;
+}
+/* Signing in option */
+.signin-option {
+  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0), #fff);
+}
+.signin-txt .signin-span {
+  display: inline-block;
+  color: blue;
+}
+.signin-option a {
+  font-size: 13px;
+}
+/* Sign in form container */
+.siginform-container {
+  width: 350px;
+  height: 313px;
+  border: 1px solid #ddd;
+  padding: 14px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Create account text at the end */
+.createaccount-menu {
+  align-items: center;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 15px;
+}
+.createaccount-menu .decoration {
+  border-top: 1px solid #e7e7e7;
+  width: 116px;
+  background-color: transparent;
+  height: 1px;
+}
+.createaccount-btn {
+  padding: 12px;
+}
+/* Create account paragraph */
+.createaccount-menu .txt-size {
+  font-size: 12px;
+}
+/* Create accountbutton */
+
+.createaccount_button {
+  font-size: 14px;
+  width: 357px;
+  height: 28px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  
+  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  box-shadow: 0 1px 0 rgb(255 255 255 / 60%) inset;
+  border-radius: 3px;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  border-radius: 2px;
+}

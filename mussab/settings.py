@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-l(p4skmgv(9!5%2reu%49ost#4$9)%ad$7c)+fb1yn)a2v$ih_
 DEBUG =False
 
 
-ALLOWED_HOSTS = ['water-store.herokuapp.com']
+ALLOWED_HOSTS = ['waterendstore.herokuapp.com']
 
 # Application definition
 
@@ -137,9 +137,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,'./mussab/static')
+    os.path.join(BASE_DIR,'mussab/static')
 ]
-STATIC_ROOT=os.path.join(BASE_DIR,'assets') 
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles') 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = "/media/"
