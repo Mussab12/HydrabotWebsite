@@ -1,6 +1,6 @@
 {% extends 'basic.html' %}
 {% load static %}
-{% static "./static/assets/images" as baseUrl %}
+{% static "static/assets/images" as baseUrl %}
 {% block body %}
   
 
@@ -57,7 +57,7 @@
                 </div>
 
                 <h3 class="h4 card-title">
-                  <a href="/Products/allProducts/{{prod.id}}" id="namepr{{prod.id}}">{{prod.Prod_title}}</a>
+                  <a href="Products/allProducts/{{prod.id}}" id="namepr{{prod.id}}">{{prod.Prod_title}}</a>
                 </h3>
 
                 <div class="price-wrapper">
