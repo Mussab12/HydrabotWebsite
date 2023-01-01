@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+@media (min-width: 360px) and (max-width: 414px) {
+  .newsletter-card {
+    padding: 20px 10px;
+  }
+  .contact-container-css {
+    /* border: 1px solid red; */
+    padding: 0px 47px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .design-input-box {
+    width: 56vw;
+  }
+  label {
+    font-size: 11px;
+  }
+}
+
+/* Tablet Design */
+@media (min-width: 540px) and (max-width: 912px) {
+  .contact-container-css {
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 21px 139px;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .design-input-box {
+    width: 32vw;
+    font-size: 18px;
+  }
+}
+@media (min-width: 280px) and (max-width: 290px) {
+  .contact-container-css {
+    padding: 11px 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  label {
+    padding: 7px;
+    font-size: 10px;
+  }
+  .design-input-box {
+    width: 59vw;
+  }
+  .newsletter-card {
+    padding: 17px 10px;
+    width: 88vw;
+  }
+}
