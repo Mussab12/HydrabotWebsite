@@ -26,8 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-l(p4skmgv(9!5%2reu%49ost#4$9)%ad$7c)+fb1yn)a2v$ih_"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =False
-
+DEBUG =True
 
 ALLOWED_HOSTS = ['waterendstore.herokuapp.com']
 
@@ -140,8 +139,8 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'./mussab/static')
 ]
 STATIC_ROOT=os.path.join(BASE_DIR,'static') 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
